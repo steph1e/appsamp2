@@ -1,0 +1,49 @@
+
+<form class="form-horizontal">
+  <fieldset>
+    <legend>New Member</legend>
+
+    <!-- Name input-->
+
+    <div class="form-group">
+      <label for="inputName" class="col-lg-2 control-label">Name</label>
+      <div class="col-lg-10">
+       <input type="text" name="name" class="form-control" id="inputName" [(ngModel)]="name">
+      </div>
+    </div>
+
+ <!-- Surname input-->
+
+    <div class="form-group">
+      <label for="inputSurname" class="col-lg-2 control-label">Surname</label>
+      <div class="col-lg-10">
+        <input type="text" name="surname" class="form-control" id="inputSurname" [(ngModel)]="surname" >
+      </div>
+    </div>
+
+<!-- Age input-->
+<div class="form-group">
+      <label for="inputAge" class="col-lg-2 control-label">Age</label>
+      <div class="col-lg-10">
+        <input type="number" name="age" class="form-control" id="inputAge" [(ngModel)]="age" >
+      </div>
+    </div>
+
+<!-- Group input-->
+
+     <div class="form-group">
+      <label for="inputGroup" class="col-lg-2 control-label">Group</label>
+      <div class="col-lg-10">
+           <input type="text" name="group" class="form-control" id="inputGroup" [(ngModel)]="group" >
+      </div>
+     </div>
+
+    <div class="form-group">
+      <div class="col-lg-10 col-lg-offset-2">
+           <button (click)="addMember()" class="btn btn-default">Add Member</button>
+        <button type="reset" class="btn btn-default">Cancel</button>
+       
+      </div>
+    </div>
+  </fieldset>
+</form>
